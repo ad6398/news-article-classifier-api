@@ -11,6 +11,7 @@ from sklearn.externals import joblib
 
 from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC
+model = joblib.load("news_article_clf_model.pkl")
 
 
 def pre_process(text):
@@ -50,7 +51,6 @@ def predict():
 if __name__=='__main__':
     
 
-    model = joblib.load("news_article_clf_model.pkl")
     print("model loaded")
     
     application.debug= True
