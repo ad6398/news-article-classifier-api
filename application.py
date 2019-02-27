@@ -27,7 +27,6 @@ def pre_process(text):
     return words
 
 application = Flask(__name__)
-model
 @application.route('/predict', methods= ['POST'])
 def predict():
     if model:
